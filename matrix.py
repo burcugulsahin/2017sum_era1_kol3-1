@@ -129,7 +129,7 @@ class Matrix(object):
 		pass
 	def __iter__(self):
 		return self
-	def __next__(self):
+	def next(self):
 		if self.iterator_coordinate_x<self.shape[0]:
 			self.iterator_coordinate_x+=1
 			return self.rows[self.iterator_coordinate_x-1]
